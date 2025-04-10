@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智飞商务</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+        
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 1.5s ease-in;
+        }
+        
+        .main-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            padding: 20px;
+        }
+        
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #00ffcc;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+        }
+        
+        .info-panel {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            position: relative;
+        }
+        
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .info-list li {
+            margin: 20px 0;
+            padding: 10px;
+            background: rgba(0, 255, 204, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .info-list li:hover {
+            background: rgba(0, 255, 204, 0.2);
+            transform: translateX(10px);
+        }
+        
+        .info-list li span {
+            color: #00ffcc;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .company-image {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .company-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .company-image img:hover {
+            transform: scale(1.05);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Company</h1>
+    </header>
+
+    <div class="main-container">
+        <div class="profile-card">
+            <img class="profile-photo" src="your-photo.jpg" alt="网站完善ing...">
+        </div>
+        
+        <div class="info-panel">
+            <ul class="info-list">
+                <li><span>Name:</span>深圳智飞商务有限公司</li>
+                <li><span>Phone:</span>+1 7705233291</li>
+                <li><span>Email:</span>zhifeipay@outlook.com</li>
+                <li><span>Address:</span>深圳市龙岗区坂田街道马安堂社区布龙路339号鸿生源信息产业园B、C栋C301-C306</li>
+            </ul>
+            <div class="company-image">
+                <img src="https://t7.baidu.com/it/u=803955309,4273540432&fm=193&f=GIF" alt="Company Image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
